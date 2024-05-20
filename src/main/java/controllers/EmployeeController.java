@@ -3,6 +3,7 @@ package controllers;
 import java.util.List;
 
 import org.json.simple.JSONObject;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,22 +20,22 @@ import models.Employee;
 public class EmployeeController {
 
 	@GetMapping
-	public Employee find(@PathVariable Long id) {
+	public ResponseEntity<Employee> find(@PathVariable Long id) {
 		return null;
 	}
 
 	@PostMapping
-	public List<Employee> findAll() {
+	public ResponseEntity<List<Employee>> findAll() {
 		return null;
 	}
 
-	@PutMapping
-	public Employee update(@PathVariable Long id, @RequestBody JSONObject employee) {
+	@PutMapping(path = "/{id}", produces = {"application/json"})
+	public ResponseEntity<Employee> update(@PathVariable Long id, @RequestBody JSONObject employee) {
 		return null;
 	}
 
 	@DeleteMapping
-	public Employee delete(@PathVariable Long id) {
+	public ResponseEntity<Boolean> delete(@PathVariable Long id) {
 		return null;
 	}
 }
