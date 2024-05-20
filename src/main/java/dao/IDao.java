@@ -1,5 +1,7 @@
 package dao;
 
+import java.util.List;
+
 public interface IDao<T> {
 
 	public T save(T t);
@@ -8,6 +10,6 @@ public interface IDao<T> {
 
 	public T update(T t);
 
-	public T[] getAll();
+	public List<T> getAll();
 
 }

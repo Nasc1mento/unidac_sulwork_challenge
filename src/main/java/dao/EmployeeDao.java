@@ -1,5 +1,7 @@
 package dao;
 
+import java.util.List;
+
 import models.Employee;
 
 public class EmployeeDao implements IDao<Employee> {
@@ -23,7 +25,7 @@ public class EmployeeDao implements IDao<Employee> {
 	}
 
 	@Override
-	public Employee[] getAll() {
+	public List<Employee> getAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}

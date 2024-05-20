@@ -1,5 +1,7 @@
 package dao;
 
+import java.util.List;
+
 import models.Item;
 
 public class ItemDao implements IDao<Item> {
@@ -23,7 +25,7 @@ public class ItemDao implements IDao<Item> {
 	}
 
 	@Override
-	public Item[] getAll() {
+	public List<Item> getAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
