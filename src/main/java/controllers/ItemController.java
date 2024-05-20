@@ -15,8 +15,10 @@ import org.springframework.web.bind.annotation.RestController;
 import models.Item;
 
 @RestController
-@RequestMapping("/api/employee")
+@RequestMapping("/api/item")
 public class ItemController {
+	
+	
 
 	@GetMapping
 	public Item find(@PathVariable Long id) {

@@ -5,6 +5,7 @@ import java.util.Objects;
 
 public class Item {
 	private Long id;
+	private Long employeeId;
 	private String name;
 	private Date date;
 
@@ -32,6 +33,14 @@ public class Item {
 		this.id = id;
 	}
 
+	public Long getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(Long employeeId) {
+		this.employeeId = employeeId;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -51,7 +60,7 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return "Item [id=" + id + ", name=" + name + ", date=" + date + "]";
+		return "Item [id=" + id + ", employeeId=" + employeeId + ", name=" + name + ", date=" + date + "]";
 	}
 
 }
