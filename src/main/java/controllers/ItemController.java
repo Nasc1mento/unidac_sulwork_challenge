@@ -12,29 +12,29 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import models.Employee;
+import models.Item;
 
 @RestController
 @RequestMapping("/api/employee")
-public class EmployeeController {
+public class ItemController {
 
 	@GetMapping
-	public Employee find(@PathVariable Long id) {
+	public Item find(@PathVariable Long id) {
 		return null;
 	}
 
 	@PostMapping
-	public List<Employee> findAll() {
+	public List<Item> findAll() {
 		return null;
 	}
 
 	@PutMapping
-	public Employee update(@PathVariable Long id, @RequestBody JSONObject employee) {
+	public Item update(@PathVariable Long id, @RequestBody JSONObject employee) {
 		return null;
 	}
 
 	@DeleteMapping
-	public Employee delete(@PathVariable Long id) {
+	public Item delete(@PathVariable Long id) {
 		return null;
 	}
 }
