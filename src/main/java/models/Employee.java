@@ -5,8 +5,25 @@ import java.util.Objects;
 public class Employee {
 
 	private Long id;
+
 	private String name;
+
 	private String cpf;
+
+	public Employee(Long id, String name, String cpf) {
+		this.id = id;
+		this.name = name;
+		this.cpf = cpf;
+	}
+
+	public Employee(String name, String cpf) {
+		this.name = name;
+		this.cpf = cpf;
+	}
+
+	public Employee() {
+		super();
+	}
 
 	public String getName() {
 		return name;

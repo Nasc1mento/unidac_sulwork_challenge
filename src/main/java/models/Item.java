@@ -1,13 +1,39 @@
 package models;
 
-import java.util.Date;
+import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.Objects;
 
 public class Item {
+
 	private Long id;
+	
 	private Long employeeId;
 	private String name;
-	private Date date;
+	private Timestamp date;
+	
+	
+
+	public Item(Long id, Long employeeId, String name, Timestamp date) {
+		this.id = id;
+		this.employeeId = employeeId;
+		this.name = name;
+		this.date = date;
+	}
+
+	public Item() {
+		
+	}
+
+
+
+	public Item(Long employeeId, String name, Timestamp date) {
+		this.employeeId = employeeId;
+		this.name = name;
+		this.date = date;
+	}
+
+
 
 	public String getName() {
 		return name;
@@ -17,11 +43,11 @@ public class Item {
 		this.name = name;
 	}
 
-	public Date getDate() {
+	public Timestamp getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(Timestamp date) {
 		this.date = date;
 	}
 
