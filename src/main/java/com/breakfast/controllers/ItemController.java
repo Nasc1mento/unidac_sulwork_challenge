@@ -1,4 +1,4 @@
-package controllers;
+package com.breakfast.controllers;
 
 import java.util.List;
 
@@ -13,29 +13,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import models.Employee;
+import com.breakfast.models.Item;
 
-@RestController
-@RequestMapping("/api/employee")
-public class EmployeeController {
 
-	@GetMapping
-	public ResponseEntity<Employee> find(@PathVariable Long id) {
-		return null;
-	}
+public class ItemController {
 
-	@PostMapping
-	public ResponseEntity<List<Employee>> findAll() {
-		return null;
-	}
-
-	@PutMapping(path = "/{id}", produces = {"application/json"})
-	public ResponseEntity<Employee> update(@PathVariable Long id, @RequestBody JSONObject employee) {
-		return null;
-	}
-
-	@DeleteMapping
-	public ResponseEntity<Boolean> delete(@PathVariable Long id) {
-		return null;
-	}
 }
